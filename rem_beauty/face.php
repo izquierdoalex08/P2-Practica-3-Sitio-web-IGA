@@ -6,213 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>r.e.m. beauty — Face</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #252536;
-            background: #fff;
-        }
-
-        .promo {
-            text-align: center;
-            background: #edf2f8;
-            padding: 10px;
-            font-size: 13px;
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 5;
-            background: #fff;
-            border-bottom: 1px solid #eee;
-            padding: 18px 4%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: -2px;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .logo small {
-            font-size: 14px;
-            letter-spacing: 0;
-        }
-
-        .logo span {
-            display: block;
-            font-size: 11px;
-            letter-spacing: 0;
-        }
-
-        nav {
-            display: flex;
-            gap: 22px;
-            flex-wrap: wrap;
-        }
-
-        .nav-label {
-            color: inherit;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .nav-label:hover {
-            color: #7896bc;
-        }
-
-        button, .btn {
-            border: 0;
-            border-radius: 25px;
-            background: #bfd0e4;
-            padding: 12px 22px;
-            cursor: pointer;
-            color: #222;
-            font-weight: 600;
-            display: inline-block;
-            text-decoration: none;
-        }
-
-        button:hover, .btn:hover {
-            background: #a8bfd9;
-        }
-
-        section {
-            padding: 35px 4%;
-        }
-
-        .section-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-
-        .section-title h2 {
-            font-weight: 500;
-            text-transform: lowercase;
-            font-size: 28px;
-            margin: 0 0 18px;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 18px;
-        }
-
-        .product {
-            min-width: 0;
-        }
-
-        .photo {
-            height: 245px;
-            background: #e9e9eb;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .details {
-            padding: 10px 2px;
-        }
-
-        .rating {
-            font-size: 12px;
-            color: #555;
-        }
-
-        .name {
-            font-weight: 600;
-            font-size: 14px;
-            margin: 5px 0;
-        }
-
-        .price {
-            font-size: 13px;
-        }
-
-        .product button {
-            width: 100%;
-            margin-top: 10px;
-            font-size: 12px;
-        }
-
-        .user-bar {
-            background: #f2f5fa;
-            text-align: right;
-            padding: 8px 4%;
-            font-size: 12px;
-            color: #536e94;
-        }
-
-        .user-bar a {
-            margin-left: 12px;
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            background: #dce6f1;
-            padding: 28px;
-            font-size: 13px;
-            margin-top: 40px;
-        }
-
-        @media(max-width:850px) {
-            header {
-                align-items: flex-start;
-                flex-direction: column;
-            }
-            .products {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            .photo {
-                height: 210px;
-            }
-        }
-
-        @media(max-width:460px) {
-            nav {
-                gap: 12px;
-                font-size: 13px;
-            }
-            .products {
-                gap: 10px;
-            }
-            .photo {
-                height: 160px;
-            }
-        }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; color: #252536; background: #fff; }
+        .promo { text-align: center; background: #edf2f8; padding: 10px; font-size: 13px; }
+        header { position: sticky; top: 0; z-index: 5; background: #fff; border-bottom: 1px solid #eee; padding: 18px 4%; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+        .logo { font-size: 28px; font-weight: 800; letter-spacing: -2px; cursor: pointer; text-decoration: none; color: inherit; }
+        .logo small { font-size: 14px; letter-spacing: 0; }
+        .logo span { display: block; font-size: 11px; letter-spacing: 0; }
+        nav { display: flex; gap: 22px; flex-wrap: wrap; }
+        .nav-label { color: inherit; text-decoration: none; font-size: 14px; }
+        .nav-label:hover { color: #7896bc; }
+        button, .btn { border: 0; border-radius: 25px; background: #bfd0e4; padding: 12px 22px; cursor: pointer; color: #222; font-weight: 600; display: inline-block; text-decoration: none; }
+        button:hover, .btn:hover { background: #a8bfd9; }
+        section { padding: 35px 4%; }
+        .section-title { display: flex; justify-content: space-between; align-items: flex-end; }
+        .section-title h2 { font-weight: 500; text-transform: lowercase; font-size: 28px; margin: 0 0 18px; }
+        .products { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+        .product { min-width: 0; }
+        .photo { position: relative; height: 245px; background: #e9e9eb; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .photo img { width: 100%; height: 100%; object-fit: contain; transition: opacity 0.3s ease; }
+        .photo-desc { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(242, 245, 250, 0.95); color: #252536; padding: 18px; font-size: 12px; line-height: 1.5; display: flex; align-items: center; justify-content: center; text-align: center; opacity: 0; transition: opacity 0.3s ease; }
+        .product:hover .photo img { opacity: 0.1; }
+        .product:hover .photo-desc { opacity: 1; }
+        .details { padding: 10px 2px; }
+        .rating { font-size: 12px; color: #555; }
+        .name { font-weight: 600; font-size: 14px; margin: 5px 0; }
+        .price { font-size: 13px; }
+        .product button { width: 100%; margin-top: 10px; font-size: 12px; }
+        .user-bar { background: #f2f5fa; text-align: right; padding: 8px 4%; font-size: 12px; color: #536e94; }
+        .user-bar a { margin-left: 12px; text-decoration: underline; }
+        footer { text-align: center; background: #dce6f1; padding: 28px; font-size: 13px; margin-top: 40px; }
+        @media(max-width:850px) { header { align-items: flex-start; flex-direction: column; } .products { grid-template-columns: repeat(2, minmax(0, 1fr)); } .photo { height: 210px; } }
+        @media(max-width:460px) { nav { gap: 12px; font-size: 13px; } .products { gap: 10px; } .photo { height: 160px; } }
     </style>
 </head>
 <body>
-
     <div class="promo">✨ regalo especial en compras seleccionadas ✨</div>
-
     <header>
-        <a class="logo" href="index.php">
-            r.e.m.<small> beauty</small>
-            <span>inspirado en tu brillo</span>
-        </a>
+        <a class="logo" href="index.php">r.e.m.<small> beauty</small><span>inspirado en tu brillo</span></a>
         <nav>
             <a class="nav-label" href="new.php">new</a>
             <a class="nav-label" href="best.php">best sellers</a>
@@ -224,10 +55,7 @@
     </header>
 
     <?php if (!empty($_SESSION["usuario"])): ?>
-        <div class="user-bar">
-            Hola, <?php echo htmlspecialchars($_SESSION["usuario"], ENT_QUOTES, "UTF-8"); ?> · ¡qué gusto tenerte aquí! 
-            <a href="salir.php">Cerrar sesión</a>
-        </div>
+        <div class="user-bar">Hola, <?php echo htmlspecialchars($_SESSION["usuario"], ENT_QUOTES, "UTF-8"); ?> · ¡qué gusto tenerte aquí! <a href="salir.php">Cerrar sesión</a></div>
     <?php endif; ?>
 
     <main>
@@ -240,6 +68,7 @@
                 <article class="product">
                     <div class="photo">
                         <img src="https://rembeauty.com/cdn/shop/files/01_blushpalette_2341ea72-2ba9-442f-abe1-2f8470a60139.png?v=1790103471&width=433&height=506&crop=center" alt="ballet rosé blush palette">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
                     </div>
                     <div class="details">
                         <div class="rating">★★★★★ <span>5.0</span></div>
@@ -252,6 +81,7 @@
                 <article class="product">
                     <div class="photo">
                         <img src="https://rembeauty.com/cdn/shop/files/01_melange_cheeky.png?v=1790105972&width=433&height=506&crop=center" alt="mélange á trois blush & highlight stick">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
                     </div>
                     <div class="details">
                         <div class="rating">★★★★★ <span>4.7</span></div>
@@ -264,6 +94,7 @@
                 <article class="product">
                     <div class="photo">
                         <img src="https://rembeauty.com/cdn/shop/files/01_collection_05ac52e7-4151-4ce3-ad29-f540236fdc3b.png?v=1790193756&width=433&height=506&crop=center" alt="en pointe full colection bundle">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
                     </div>
                     <div class="details">
                         <div class="rating">★★★★★ <span>5.0</span></div>
@@ -276,6 +107,7 @@
                 <article class="product">
                     <div class="photo">
                         <img src="https://rembeauty.com/cdn/shop/files/01_52.png?v=1761085060&width=433&height=506&crop=center" alt="r.e.m. beauty x Wicked: For Good couldn´t be lovelier blush set">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
                     </div>
                     <div class="details">
                         <div class="rating">★★★★★ <span>4.7</span></div>
@@ -288,6 +120,7 @@
                 <article class="product">
                     <div class="photo">
                         <img src="https://rembeauty.com/cdn/shop/files/01_highlighter-serum-dreamglow-rem-quartz.png?v=1764353465&width=433&height=506&crop=center" alt="dreamglow highlight serum">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
                     </div>
                     <div class="details">
                         <div class="rating">★★★★★ <span>4.8</span></div>
@@ -300,6 +133,7 @@
                 <article class="product">
                     <div class="photo">
                         <img src="https://rembeauty.com/cdn/shop/files/01_22_f8a8fc1d-601f-4f0b-b692-447bc942819f.png?v=1737584277&width=433&height=506&crop=center" alt="eclipse blush & lip stick">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
                     </div>
                     <div class="details">
                         <div class="rating">★★★★★ <span>4.7</span></div>
@@ -312,6 +146,7 @@
                 <article class="product">
                     <div class="photo">
                         <img src="https://rembeauty.com/cdn/shop/files/Rapid_Highlighter_PDP_Open_missmercury_6138bd63-c4e6-43bd-9f5f-3e6fe579ba8b.png?v=1691473933&width=433&height=506&crop=center" alt="interstellar highlighter topper">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
                     </div>
                     <div class="details">
                         <div class="rating">★★★★★ <span>4.9</span></div>
@@ -324,6 +159,7 @@
                 <article class="product">
                     <div class="photo">
                         <img src="https://rembeauty.com/cdn/shop/files/0062_REM_Foundation_PDP_FoundationBrush.png?v=1762197943&width=433&height=506&crop=center" alt="foundation brush">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
                     </div>
                     <div class="details">
                         <div class="rating">★★★★★ <span>4.8</span></div>
@@ -332,13 +168,36 @@
                         <button type="button">AÑADIR AL CARRITO</button>
                     </div>
                 </article>
+
+                <article class="product">
+                    <div class="photo">
+                        <img src="LINK_DE_TU_IMAGEN_AQUI" alt="Producto 9">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
+                    </div>
+                    <div class="details">
+                        <div class="rating">★★★★★ <span>5.0</span></div>
+                        <div class="name">Nombre Producto 9</div>
+                        <div class="price">$00 USD</div>
+                        <button type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="photo">
+                        <img src="LINK_DE_TU_IMAGEN_AQUI" alt="Producto 10">
+                        <div class="photo-desc">Pon aquí tu descripción...</div>
+                    </div>
+                    <div class="details">
+                        <div class="rating">★★★★★ <span>5.0</span></div>
+                        <div class="name">Nombre Producto 10</div>
+                        <div class="price">$00 USD</div>
+                        <button type="button">AÑADIR AL CARRITO</button>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer class="account-footer">
-        Izquierdo Gaytan Alexander 5°J · r.e.m. beauty by Ariana Grande
-    </footer>
-
+    <footer>Izquierdo Gaytan Alexander 5°J · r.e.m. beauty by Ariana Grande</footer>
 </body>
 </html>

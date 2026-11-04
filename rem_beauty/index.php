@@ -272,7 +272,6 @@
     <?php endif; ?>
 
     <main>
-        <!-- SECCIÓN HERO PRINCIPAL -->
         <section class="hero">
             <div>
                 <h1>your everyday encore</h1>
@@ -281,33 +280,31 @@
             </div>
         </section>
 
-        <!-- TEXTO INTERMEDIO (PEQUEÑO TEXTO ABAJO DE LA IMAGEN) -->
         <div class="hero-subtext">
-            <h3>explora por categoría</h3>
-            <p>Descubre fórmulas esenciales diseñadas para iluminar tus ojos, labios y rostro con un acabado único.</p>
+            <h3>ari's world</h3>
+            <p>La marca de arte cotidiano. r.e.m. beauty crea productos de gran impacto, que estimulan los sentidos, combinando el arte con el juego diario para una autoexpresión sin límites.</p>
         </div>
 
-        <!-- MOSAICO DE CATEGORÍAS -->
         <section class="category-tiles">
             <a class="category-tile tile-eyes" href="eyes.php">
-                <img src="https://rembeauty.com/cdn/shop/files/01_liquid-eyeshadow-shimmer-waterproof-starlet-rem-fembot.png?v=1776719015&width=900" alt="Maquillaje para ojos">
+                <img src="https://media.ulta.com/i/ulta/2661306_alt02?w=1080&h=1080&fmt=auto" alt="Maquillaje para ojos">
                 <span>eyes</span>
             </a>
             <a class="category-tile tile-lips" href="lip.php">
-                <img src="https://rembeauty.com/cdn/shop/files/01_glossybalmset_488b29e6-eca2-4c98-b4f7-abe11703017e.png?v=1788908350&width=900" alt="Productos para labios">
+                <img src="https://media.ulta.com/i/ulta/2661300_alt01?w=1080&h=1080&fmt=auto" alt="Productos para labios">
                 <span>lips</span>
             </a>
             <a class="category-tile tile-face" href="face.php">
-                <img src="https://rembeauty.com/cdn/shop/files/01_melange_cheeky.png?v=1790105972&width=900" alt="Maquillaje para rostro">
+                <img src="https://media.ulta.com/i/ulta/2661304_alt04?w=1080&h=1080&fmt=auto" alt="Maquillaje para rostro">
                 <span>face</span>
             </a>
         </section>
 
-        <!-- HISTORIA DE MARCA -->
         <section class="brand-story">
-            <p class="eyebrow">THE WORLD OF r.e.m. beauty</p>
-            <h2>make your own kind of magic</h2>
-            <p>r.e.m. beauty es una marca creada para explorar la creatividad, jugar con el color y expresar tu personalidad. Descubre texturas, tonos y productos que acompañan cada una de tus versiones.</p>
+            <p class="eyebrow"> r.e.m. beauty</p>
+            <h2>the beauty of everyday artistry</h2>
+            <p>De la imaginación de nuestra fundadora, Ariana Grande, r.e.m. beauty es una invitación a expresarte a través de la belleza y más allá. Liderados por una verdadera artista, estamos construyendo una marca con un propósito creativo, inspirados por los creativos, soñadores y artistas del mundo. </p>
+            <p> Nuestros productos facilitan la expresión de tu creatividad: híbridos multifuncionales con ingredientes para el cuidado de la piel y fórmulas hipersensoriales que combinan arte y diversión cotidiana. Veganos y libres de crueldad animal, siempre. </p>
             <a class="btn" href="best.php">DESCUBRIR FAVORITOS</a>
         </section>
     </main>
