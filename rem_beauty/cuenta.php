@@ -110,7 +110,7 @@
             padding: 0 4%;
         }
 
-        /* FORMULARIOS DE CUENTA */
+        /* Formularios de la cuenta */
         .forms-container {
             background: #f2f5fa;
             max-width: 520px;
@@ -162,8 +162,7 @@
             color: #385d82;
             font-weight: 600;
         }
-
-        /* ALTERNANCIA ENTRE INICIO DE SESIÓN Y REGISTRO EN CSS */
+        
         .auth-switch {
             display: none;
         }
@@ -267,7 +266,6 @@
                 <input type="radio" name="auth_switch" id="switch-login" class="auth-switch" <?php echo empty($mensajeRegistro) ? 'checked' : ''; ?>>
                 <input type="radio" name="auth_switch" id="switch-registro" class="auth-switch" <?php echo !empty($mensajeRegistro) ? 'checked' : ''; ?>>
 
-                <!-- FORMULARIO LOGIN -->
                 <div class="formbox" id="box-login">
                     <h2>Iniciar sesión</h2>
                     <form method="post" action="cuenta.php">
@@ -287,7 +285,7 @@
                     </div>
                 </div>
 
-                <!-- FORMULARIO REGISTRO -->
+                <!-- Formulario Registro -->
                 <div class="formbox" id="box-registro">
                     <h2>Crear cuenta</h2>
                     <form method="post" action="cuenta.php">
